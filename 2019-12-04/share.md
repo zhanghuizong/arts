@@ -1,6 +1,6 @@
 # 分享
 
-## 如何用户自己的博客-写作
+## 如何写作
 
 #### 分享几款工具
 - https://docsify.js.org/#/quickstart
