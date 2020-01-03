@@ -1,6 +1,6 @@
 # 分享
 
-#### 关于php中strtotime函数边界值问题
+## 关于php中strtotime函数边界值问题
 
 ```php
 echo date("Y-m-d",strtotime("-1 month", strtotime('2018-07-31'))); // 2018-07-01
