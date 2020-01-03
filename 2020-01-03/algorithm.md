@@ -61,3 +61,24 @@ var lengthOfLongestSubstring = function (s) {
     return max;
 };
 ```
+
+```go
+func lengthOfLongestSubstring(s string) int {
+	m := make(map[int]int)
+	var start float64 = 0
+	var max float64 = 0
+	for i, ss := range s {
+		c := int(ss)
+
+		_, isOk := m[c]
+		if isOk {
+			start = math.Max(start, float64(m[c]+1))
+		}
+
+		m[c] = i
+		max = math.Max(max, float64(i-int(start)+1))
+	}
+
+	return int(max)
+}
+```
